@@ -1,0 +1,12 @@
+{
+  "functions": {
+    "server/api/index.js": {
+      "runtime": "vercel@latest"
+    }
+  },
+  "rewrites": [
+    { "source": "/upload", "destination": "/server/api/index.js" },
+    { "source": "/url/:path*", "destination": "/server/api/index.js" },
+    { "source": "/file/:path*", "destination": "/server/api/index.js" }
+  ]
+}
