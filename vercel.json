@@ -1,0 +1,7 @@
+{
+  "rewrites": [
+    { "source": "/upload", "destination": "/index.js" },
+    { "source": "/url/:key", "destination": "/index.js" },
+    { "source": "/file/:key", "destination": "/index.js" }
+  ]
+}
